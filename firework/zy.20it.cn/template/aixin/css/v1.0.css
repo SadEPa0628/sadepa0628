@@ -1,0 +1,134 @@
+@import url("../../common.css?v1.0.2");
+
+
+body {
+	margin: 0;
+	overflow: hidden;
+	background: #000;
+}
+canvas {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#pinkboard {
+	animation: anim 1.5s ease-in-out infinite;
+	-webkit-animation: anim 1.5s ease-in-out infinite;
+	-o-animation: anim 1.5s ease-in-out infinite;
+	-moz-animation: anim 1.5s ease-in-out infinite;
+}
+@keyframes anim {
+	0% {
+		transform: scale(0.8);
+	}
+	25% {
+		transform: scale(0.7);
+	}
+	50% {
+		transform: scale(1);
+	}
+	75% {
+		transform: scale(0.7);
+	}
+	100% {
+		transform: scale(0.8);
+	}
+}
+@-webkit-keyframes anim {
+	0% {
+		-webkit-transform: scale(0.8);
+	}
+	25% {
+		-webkit-transform: scale(0.7);
+	}
+	50% {
+		-webkit-transform: scale(1);
+	}
+	75% {
+		-webkit-transform: scale(0.7);
+	}
+	100% {
+		-webkit-transform: scale(0.8);
+	}
+}
+@-o-keyframes anim {
+	0% {
+		-o-transform: scale(0.8);
+	}
+	25% {
+		-o-transform: scale(0.7);
+	}
+	50% {
+		-o-transform: scale(1);
+	}
+	75% {
+		-o-transform: scale(0.7);
+	}
+	100% {
+		-o-transform: scale(0.8);
+	}
+}
+@-moz-keyframes anim {
+	0% {
+		-moz-transform: scale(0.8);
+	}
+	25% {
+		-moz-transform: scale(0.7);
+	}
+	50% {
+		-moz-transform: scale(1);
+	}
+	75% {
+		-moz-transform: scale(0.7);
+	}
+	100% {
+		-moz-transform: scale(0.8);
+	}
+}
+#name {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: -20px;
+	font-size: 46px;
+	color: #ea80b0;
+}
+
+#contentToWrite {
+	font-size: 26px;
+	position: absolute;
+	left: 50%;
+	top: 47%;
+	transform: translate(-48%, 0);
+	/* margin-left:-80px;*/
+}
+
+audio {
+	display: none;
+}
+
+
+#btn-make {
+    bottom: 150px;
+    right: 25px;
+    background-color: rgba(0,0,0,.3);
+}
+.div_btn {
+    position: fixed;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 1em;
+    line-height: 38px;
+    text-align: center;
+    z-index: 999;
+}
+#div_support {
+    bottom: 80px;
+    right: 25px;
+    background-color: rgba(0,0,0,.3);
+}
+#div_wph img{width:44px;height:44px;}
